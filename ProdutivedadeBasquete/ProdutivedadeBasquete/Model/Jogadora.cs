@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProdutivedadeBasquete.Model
 {
-    class Jogadora
+    public class Jogadora
     {
         [Key]
         public int Id { get; set; }
