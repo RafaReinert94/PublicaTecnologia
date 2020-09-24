@@ -13,7 +13,6 @@ namespace ProdutivedadeBasquete.Model
         public int Id { get; set; }
         public string Nome { get; set; }
         public DateTime Nascimento { get; set; }
-        public string CidadeNascimento { get; set; }
         public int RecordeDePontos { get; set; }
     }
 }

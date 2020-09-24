@@ -10,27 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ProdutivedadeBasquete
+namespace ProdutivedadeBasquete.View
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Lógica interna para VisualizarPartida.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class VisualizarPartida : Window
     {
-        public MainWindow()
+        public VisualizarPartida()
         {
             InitializeComponent();
         }
 
-        private void btnAdicionarJogadora_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnExibirPartida_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }

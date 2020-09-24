@@ -1,0 +1,18 @@
+﻿<Window x:Class="ProdutivedadeBasquete.View.AdicionarJogadora"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProdutivedadeBasquete.View"
+        mc:Ignorable="d"
+        Title="AdicionarJogadora" Height="432.99" Width="393.299">
+    <Grid>
+        <Label x:Name="lblNome" Content="Nome:" HorizontalAlignment="Left" Margin="98,84,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxNome" HorizontalAlignment="Left" Height="23" Margin="148,88,0,0" TextWrapping="Wrap" Text="Nome Completo" VerticalAlignment="Top" Width="120"/>
+        <DatePicker HorizontalAlignment="Left" Margin="148,158,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDataDeNascimento" Content="Data de Nascimento" HorizontalAlignment="Left" Margin="25,157,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="98,231,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="211,231,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

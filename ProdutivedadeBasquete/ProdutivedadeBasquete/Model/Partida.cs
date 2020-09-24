@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProdutivedadeBasquete.Model
 {
-    public class Jogos
+    public class Partida
     {
         [Key]
         public int Id { get; set; }
@@ -18,7 +18,6 @@ namespace ProdutivedadeBasquete.Model
         public int QtidadeMaximaPontos { get; set; }
         public int RecordeMinimoPontos { get; set; }
         public int RecordeMaximoPontos { get; set; }
-
 
     }
 }
