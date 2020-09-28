@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProdutivedadeBasquete.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,12 +28,12 @@ namespace ProdutivedadeBasquete
 
         private void btnAdicionarJogadora_Click(object sender, RoutedEventArgs e)
         {
-
+            new AdicionarJogadora().ShowDialog();
         }
 
         private void btnExibirPartida_Click(object sender, RoutedEventArgs e)
         {
-
+            new VisualizarPartida().ShowDialog();
         }
     }
 }

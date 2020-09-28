@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProdutivedadeBasquete.Controller;
+using ProdutivedadeBasquete.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,20 @@ namespace ProdutivedadeBasquete.View
         public AdicionarJogadora()
         {
             InitializeComponent();
+        }
+
+        private void btnSalvar_Click(object sender, RoutedEventArgs e)
+        {
+
+            new JogadoraController().CadastrarJogadora(new Jogadora()
+            {
+                Nome = tbxNome.Text,
+                Nascimento = dpkNascimento.SelectedDate.GetValueOrDefault() 
+                
+            });
+
+            this.Close();
+
         }
     }
 }
