@@ -75,6 +75,9 @@
     <Compile Include="View\AdicionarJogadora.xaml.cs">
       <DependentUpon>AdicionarJogadora.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\AdicionarPartida.xaml.cs">
+      <DependentUpon>AdicionarPartida.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\VisualizarPartida.xaml.cs">
       <DependentUpon>VisualizarPartida.xaml</DependentUpon>
     </Compile>
@@ -91,6 +94,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\AdicionarJogadora.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AdicionarPartida.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

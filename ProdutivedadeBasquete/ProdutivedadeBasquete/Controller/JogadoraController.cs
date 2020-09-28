@@ -22,5 +22,10 @@ namespace ProdutivedadeBasquete.Controller
             ctx.SaveChanges();
         }
 
+        public List<Jogadora> GetJogadoras()
+        {
+            return ctx.Jogadoras.ToList();
+        }
+
     }
 }

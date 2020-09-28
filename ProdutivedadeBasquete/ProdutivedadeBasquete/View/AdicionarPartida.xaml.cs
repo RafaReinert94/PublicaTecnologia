@@ -15,22 +15,21 @@ using System.Windows.Shapes;
 namespace ProdutivedadeBasquete.View
 {
     /// <summary>
-    /// Lógica interna para VisualizarPartida.xaml
+    /// Lógica interna para AdicionarPartida.xaml
     /// </summary>
-    public partial class VisualizarPartida : Window
+    public partial class AdicionarPartida : Window
     {
-        public VisualizarPartida()
+        public AdicionarPartida()
         {
             InitializeComponent();
+        }
 
-
-
-
-
+        private void btnSalvar_Click(object sender, RoutedEventArgs e)
+        {
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
         {
 
         }
