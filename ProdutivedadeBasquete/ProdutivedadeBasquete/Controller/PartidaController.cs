@@ -44,7 +44,6 @@ namespace ProdutivedadeBasquete.Controller
             }
         }
 
-
         public int QuantidadeMaxima(int idJogadora, int pontos)
         {
 
@@ -114,5 +113,9 @@ namespace ProdutivedadeBasquete.Controller
             return ctx.Partidas.ToList();
         }
 
+        public void VisualizarPartidas()
+        {
+
+        }
     }
 }
