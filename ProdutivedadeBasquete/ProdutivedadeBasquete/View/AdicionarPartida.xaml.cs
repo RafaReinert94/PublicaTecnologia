@@ -26,7 +26,9 @@ namespace ProdutivedadeBasquete.View
             InitializeComponent();
 
             List<Jogadora> jogadoras = new JogadoraController().GetJogadoras();
-            cbxJogadora.ItemsSource = jogadoras.Select(x => x.Nome);
+            cbxJogadora.ItemsSource = jogadoras;
+
+            
         }
 
         private void btnSalvar_Click(object sender, RoutedEventArgs e)
@@ -34,13 +36,13 @@ namespace ProdutivedadeBasquete.View
 
             new PartidaController().CadastrarPartida(new Partida()
             {
-                IdJogadora = cbxJogadora.SelectedIndex,
+                IdJogadora = Int16.Parse(cbxJogadora.SelectedValue.ToString()),
                 NumJogo = Int16.Parse(tbxJogo.Text),
                 Placar = Int16.Parse(tbxPontos.Text),
-                QtidadeMinimaPontos = new PartidaController().QuantidadeMinima(cbxJogadora.SelectedIndex, Int16.Parse(tbxPontos.Text)),
-                QtidadeMaximaPontos = new PartidaController().QuantidadeMaxima(cbxJogadora.SelectedIndex, Int16.Parse(tbxPontos.Text)),
-                RecordeMinimoPontos = new PartidaController().QuebraRecordeMinimo(cbxJogadora.SelectedIndex, Int16.Parse(tbxPontos.Text)),
-                RecordeMaximoPontos = new PartidaController().QuebraRecordeMaximo(cbxJogadora.SelectedIndex, Int16.Parse(tbxPontos.Text))
+                QtidadeMinimaPontos = new PartidaController().QuantidadeMinima(Int16.Parse(cbxJogadora.SelectedValue.ToString()), Int16.Parse(tbxPontos.Text)),
+                QtidadeMaximaPontos = new PartidaController().QuantidadeMaxima(Int16.Parse(cbxJogadora.SelectedValue.ToString()), Int16.Parse(tbxPontos.Text)),
+                RecordeMinimoPontos = new PartidaController().QuebraRecordeMinimo(Int16.Parse(cbxJogadora.SelectedValue.ToString()), Int16.Parse(tbxPontos.Text)),
+                RecordeMaximoPontos = new PartidaController().QuebraRecordeMaximo(Int16.Parse(cbxJogadora.SelectedValue.ToString()), Int16.Parse(tbxPontos.Text))
             }) ;
 
             this.Close();
