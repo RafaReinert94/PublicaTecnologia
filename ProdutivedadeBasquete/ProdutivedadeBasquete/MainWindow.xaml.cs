@@ -35,5 +35,10 @@ namespace ProdutivedadeBasquete
         {
             new VisualizarPartida().ShowDialog();
         }
+
+        private void btnAdicionarPartida_Click(object sender, RoutedEventArgs e)
+        {
+            new AdicionarPartida().ShowDialog();
+        }
     }
 }

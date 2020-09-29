@@ -8,8 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="btnAdicionarJogadora" Content="Adicionar Jogadora" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Margin="76,130,0,0" Click="btnAdicionarJogadora_Click"/>
-        <Button x:Name="btnExibirPartida" Content="Exibir Partidas" HorizontalAlignment="Left" Margin="75,219,0,0" VerticalAlignment="Top" Width="131" Click="btnExibirPartida_Click"/>
+        <Button x:Name="btnExibirPartida" Content="Exibir Partidas" HorizontalAlignment="Left" Margin="76,222,0,0" VerticalAlignment="Top" Width="131" Click="btnExibirPartida_Click"/>
         <Label x:Name="lblBemVindo" Content="Bem Vindo" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="59" Width="140" FontSize="20"/>
+        <Button x:Name="btnAdicionarPartida" Content="Adicionar Partida" HorizontalAlignment="Left" Margin="76,173,0,0" VerticalAlignment="Top" Width="130" Click="btnAdicionarPartida_Click"/>
 
     </Grid>
 </Window>
