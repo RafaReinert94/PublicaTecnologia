@@ -27,7 +27,7 @@ namespace ProdutivedadeBasquete.Controller
 
             if (ctx.Partidas.Select(x => x.IdJogadora).Contains(idJogadora))
             {
-                int registroJogadora = ctx.Partidas.Where(x => x.IdJogadora == idJogadora).Select(x => x.QtidadeMinimaPontos).Max();
+                int registroJogadora = ctx.Partidas.Where(x => x.IdJogadora == idJogadora).Select(x => x.QtidadeMinimaPontos).Min();
                 if (pontos < registroJogadora)
                 {
                     return pontos;
@@ -75,11 +75,11 @@ namespace ProdutivedadeBasquete.Controller
                 int registroJogadora = ctx.Partidas.Where(x => x.IdJogadora == idJogadora).Select(x => x.QtidadeMinimaPontos).Min();
                 if (pontos < registroJogadora)
                 {
-                    return 1;
+                    return (ctx.Partidas.Where(x => x.IdJogadora == idJogadora).Select(x => x.RecordeMinimoPontos).Max() + 1);
                 }
                 else
                 {
-                    return 0;
+                    return (ctx.Partidas.Where(x => x.IdJogadora == idJogadora).Select(x => x.RecordeMinimoPontos).Max());
                 }
             }
             else
@@ -96,11 +96,11 @@ namespace ProdutivedadeBasquete.Controller
                 int registroJogadora = ctx.Partidas.Where(x => x.IdJogadora == idJogadora).Select(x => x.QtidadeMaximaPontos).Max();
                 if (pontos > registroJogadora)
                 {
-                    return 1;
+                    return (ctx.Partidas.Where(x => x.IdJogadora == idJogadora).Select(x => x.RecordeMaximoPontos).Max() + 1);
                 }
                 else
                 {
-                    return 0;
+                    return (ctx.Partidas.Where(x => x.IdJogadora == idJogadora).Select(x => x.RecordeMaximoPontos).Max());
                 }
             }
             else
