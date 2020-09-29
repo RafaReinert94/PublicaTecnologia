@@ -29,6 +29,10 @@ namespace ProdutivedadeBasquete.View
         {
             InitializeComponent();
 
+            List<Jogadora> jogadorasCbx = new JogadoraController().GetJogadoras();
+            cbxJogadora.ItemsSource = jogadorasCbx;
+
+
             var jogadoras = Jogadora.GetJogadoras();
             var partidas = Partida.GetPartidas();
 
@@ -49,14 +53,29 @@ namespace ProdutivedadeBasquete.View
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnExibir_Click(object sender, RoutedEventArgs e)
         {
 
+
+            var jogadoras = Jogadora.GetJogadoras();
+            var partidas = Partida.GetPartidas();
+
+
+            dataGrid.ItemsSource = (from part in partidas
+                                    join jog in jogadoras on part.IdJogadora equals jog.Id
+                                    select new
+                                    {
+                                        Jogo = part.NumJogo,
+                                        Jogadora = jog.Nome,
+                                        Placar = part.Placar,
+                                        MinimoDaTemporada = part.QtidadeMinimaPontos,
+                                        MaximaDaTemporada = part.QtidadeMinimaPontos,
+                                        QuebraRecordeMinimo = part.RecordeMinimoPontos,
+                                        QuebraRecordeMaximo = part.RecordeMaximoPontos
+
+                                    }).ToList();
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
+    
     }
 }
