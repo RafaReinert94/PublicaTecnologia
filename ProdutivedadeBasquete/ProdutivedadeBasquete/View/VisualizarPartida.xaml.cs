@@ -56,8 +56,8 @@ namespace ProdutivedadeBasquete.View
         private void btnExibir_Click(object sender, RoutedEventArgs e)
         {
 
-
-            var jogadoras = Jogadora.GetJogadoras();
+      
+            var jogadoras = Jogadora.GetJogadoras().Where(x=>x.Id == Int16.Parse(cbxJogadora.SelectedValue.ToString()));
             var partidas = Partida.GetPartidas();
 
 
@@ -76,6 +76,6 @@ namespace ProdutivedadeBasquete.View
                                     }).ToList();
         }
 
-    
+
     }
 }

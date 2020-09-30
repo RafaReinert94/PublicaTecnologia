@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProdutivedadeBasquete"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="372" Width="492.5">
     <Grid>
-        <Button x:Name="btnAdicionarJogadora" Content="Adicionar Jogadora" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Margin="76,130,0,0" Click="btnAdicionarJogadora_Click"/>
-        <Button x:Name="btnExibirPartida" Content="Exibir Partidas" HorizontalAlignment="Left" Margin="76,222,0,0" VerticalAlignment="Top" Width="131" Click="btnExibirPartida_Click"/>
-        <Label x:Name="lblBemVindo" Content="Bem Vindo" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="59" Width="140" FontSize="20"/>
-        <Button x:Name="btnAdicionarPartida" Content="Adicionar Partida" HorizontalAlignment="Left" Margin="76,173,0,0" VerticalAlignment="Top" Width="130" Click="btnAdicionarPartida_Click"/>
+        <Button x:Name="btnAdicionarJogadora" Content="Adicionar Jogadora" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Margin="73,140,0,0" Click="btnAdicionarJogadora_Click"/>
+        <Button x:Name="btnExibirPartida" Content="Exibir Partidas" HorizontalAlignment="Left" Margin="73,258,0,0" VerticalAlignment="Top" Width="130" Click="btnExibirPartida_Click"/>
+        <Label x:Name="lblBemVindo" Content="Bem Vindo" HorizontalAlignment="Left" Margin="180,27,0,0" VerticalAlignment="Top" Height="45" Width="120" FontSize="20"/>
+        <Button x:Name="btnAdicionarPartida" Content="Adicionar Partida" HorizontalAlignment="Left" Margin="73,199,0,0" VerticalAlignment="Top" Width="130" Click="btnAdicionarPartida_Click"/>
+        <Label Content="Sistema de Produtividade das Jogadoras" HorizontalAlignment="Left" Margin="94,77,0,0" VerticalAlignment="Top" FontSize="16"/>
 
     </Grid>
 </Window>
