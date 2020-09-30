@@ -12,14 +12,14 @@ Procure pelo Entity Framework, instale e reinicie o Visual Studio.
 Vá no console XXXXXX e digite os seguintes códigos:
 
 Enable-Migrations
-aguarde.
+Aguarde.
 
 Add-Migration
 Vai pedir para colocar um nome: Primeiro.
-aguarde.
+Aguarde.
 
 Update-DataBase
-aguarde.
+Aguarde.
 
 Após realizar essas etapas é só clicar em Iniciar (F5).
 Ai é só adicionar a jogadora Maria no botão Adicionar Jogadora.
