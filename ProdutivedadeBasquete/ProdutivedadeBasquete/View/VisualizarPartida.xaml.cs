@@ -45,7 +45,7 @@ namespace ProdutivedadeBasquete.View
                                         Jogadora = jog.Nome,
                                         Placar = part.Placar,
                                         MinimoDaTemporada = part.QtidadeMinimaPontos,
-                                        MaximaDaTemporada = part.QtidadeMinimaPontos,
+                                        MaximaDaTemporada = part.QtidadeMaximaPontos,
                                         QuebraRecordeMinimo = part.RecordeMinimoPontos,
                                         QuebraRecordeMaximo = part.RecordeMaximoPontos
 
@@ -69,7 +69,7 @@ namespace ProdutivedadeBasquete.View
                                         Jogadora = jog.Nome,
                                         Placar = part.Placar,
                                         MinimoDaTemporada = part.QtidadeMinimaPontos,
-                                        MaximaDaTemporada = part.QtidadeMinimaPontos,
+                                        MaximaDaTemporada = part.QtidadeMaximaPontos,
                                         QuebraRecordeMinimo = part.RecordeMinimoPontos,
                                         QuebraRecordeMaximo = part.RecordeMaximoPontos
 
